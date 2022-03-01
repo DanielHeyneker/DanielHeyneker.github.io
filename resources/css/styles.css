@@ -9,16 +9,12 @@
     src: url('https://fonts.gstatic.com/s/righteous/v9/1cXxaUPXBpj2rGoU7C9WiHGF.woff2') format('woff2');
 }
 
-html {
-    display: block;
-}
 /* Header */
 
 header {
     font-family: 'Space mono', courier;
-    margin-bottom: 10px;
     background-color: rgb(150, 149, 148);
-    min-height: 50px;
+    min-height: 30px;
 }
 
 h1, nav {
@@ -30,26 +26,21 @@ h1, nav {
 nav {
     color: hsl(51, 58%, 62%);
     min-width: 15%;
-    float:right;
-    display: block;
+    float: right;
+    margin: 15px;
 }
 
 nav li {
+    font-size: 11px;
     list-style-type: none;
-    float: right;
-    margin: 15px 15px;
+    margin: 10px;
+    display: inline-block;
 }
 
 /* Title */
 
 #web-title {
     font-family: 'Righteous';
-    font-size: 38px;
-}
-
-h1 {
-    display: inline-block;
-    position: relative;
-    top: 5px;
-
+    font-size: 16px;
+    padding: 10px;
 }
