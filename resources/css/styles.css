@@ -1,0 +1,55 @@
+/* Global Selector goes here */
+@font-face {
+    font-family: 'Space mono';
+    src: url('https://fonts.gstatic.com/s/spacemono/v10/i7dPIFZifjKcF5UAWdDRYEF8RQ.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Righteous';
+    src: url('https://fonts.gstatic.com/s/righteous/v9/1cXxaUPXBpj2rGoU7C9WiHGF.woff2') format('woff2');
+}
+
+html {
+    display: block;
+}
+/* Header */
+
+header {
+    font-family: 'Space mono', courier;
+    margin-bottom: 10px;
+    background-color: rgb(150, 149, 148);
+    min-height: 50px;
+}
+
+h1, nav {
+    font-weight: bold;
+}
+
+/* Navigation */
+
+nav {
+    color: hsl(51, 58%, 62%);
+    min-width: 15%;
+    float:right;
+    display: block;
+}
+
+nav li {
+    list-style-type: none;
+    float: right;
+    margin: 15px 15px;
+}
+
+/* Title */
+
+#web-title {
+    font-family: 'Righteous';
+    font-size: 38px;
+}
+
+h1 {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+
+}
