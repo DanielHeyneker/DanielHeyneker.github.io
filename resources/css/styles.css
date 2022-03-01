@@ -1,4 +1,8 @@
 /* Global Selector goes here */
+* {
+    margin: 0;
+    padding: 0;
+}
 @font-face {
     font-family: 'Space mono';
     src: url('https://fonts.gstatic.com/s/spacemono/v10/i7dPIFZifjKcF5UAWdDRYEF8RQ.woff2') format('woff2');
@@ -10,37 +14,57 @@
 }
 
 /* Header */
-
-header {
-    font-family: 'Space mono', courier;
-    background-color: rgb(150, 149, 148);
-    min-height: 30px;
-}
-
-h1, nav {
-    font-weight: bold;
-}
-
-/* Navigation */
-
-nav {
-    color: hsl(51, 58%, 62%);
-    min-width: 15%;
-    float: right;
-    margin: 15px;
-}
-
-nav li {
-    font-size: 11px;
-    list-style-type: none;
-    margin: 10px;
-    display: inline-block;
-}
-
-/* Title */
-
-#web-title {
+h1 {
+    background-color: aliceblue;
+    border-bottom: 2px solid black;
+    display: block;
     font-family: 'Righteous';
-    font-size: 16px;
+    font-size: 40px;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
+
+/* Main */
+
+main {
+    display: block;
+    height: 500px;
+    overflow: scroll;
+    position: relative;
+    top: 70px;
+}
+section {
+    margin-top: 20px;
+    font-family: 'Space mono';
+}
+/* Main Table */
+
+section h2 {
+    padding-bottom: 20px;
+    text-align: center;
+    opacity: 0.75;
+}
+
+table {
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+th, td {
+    padding: 5px;
+}
+
+td {
+    border-bottom: 1px dotted black;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    top: 70px;
+}
+
