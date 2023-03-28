@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<style>
+
+}
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  background-color: #ffffff;
+
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+    float: left;
+}
+
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+    #navbar {
+  background-color: /*#CBDDD1;*/#414B3B;/* Black background color */
+  position: relative; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 1s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+#title {
+    position: relative;
+    top : 20px;
+
+}
+
+#back-image {
+    background-image: url('title_image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    opacity: 80%;
+}
+#back-image.h1{
+    opacity: 100%;
+}
+.img1{
+     float:left;
+     width: 400px;
+     height:400px;
+     display: block;
+     border-radius: 50%;
+     margin: 15px;
+    
+}
+.img2{
+     float:right;
+     width: 400px;
+     height:400px;
+     display: block;
+     border-radius: 50%;
+     margin: 15px;
+    
+}
+
+.text{
+    float:left;
+    display: block;
+    margin-left: 50px;
+}
+#informasi {
+
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #AB8742;
+   color: white;
+
+
+}
+
+.clear{
+    clear:both;
+}
+#product{
+    position: relative;
+}
+.pro1{
+    background-color: #414B3B;
+}
+p {
+    padding: 10px;
+}
+
+</style>
+<html>
+<head>
+	<title>>Daniel Broomstick</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	</style>
+</head>
+<body style="background-color:#CBDDD1;(205, 206, 220)"  >
+	<nav class="navbar navbar-expand-sm  navbar-dark" id="navbar">
+		<a class="navbar-brand" href="#">Daniel Broomstick</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#product">Product</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid" id="title" >
+		<section id="home">
+			<div class="jumbotron text-center" id="back-image">
+				<h1 style="color : #FFF9F3; opacity: 100%; text-shadow: 2px 2px #414B3B;">Welcome to My Personal</br>
+				Broomstick Website</h1>
+				<p style="color: rgb(255, 255, 255); opacity: 100%; text-shadow: 1px 1px black">This simple website page created to provide the information needed to our customer</p>
+			</div>
+		</section>
+		<section >
+			<div>
+				<h2 style="padding-bottom:10px; margin-top: 0px;color:#AB8742; margin: 15px;">Our Product</h2>
+                <div class="pro1">
+				<div>
+                    <img class="img1" src="title_image.jpg" width="86" height="98"/>
+                </div>
+                <div class="text">                
+                    <h3 style="padding:15px; color:#ddd;">Palm Broomstick</h3>
+                    <p style="color:#ddd; word-wrap: break-word;">Broomsticks that are made from palm ekel’s leaves. Mostly produced in North Sumatra, West Sumatra and Riau</p>
+                    <p style="color:#ddd; word-wrap: break-word;">Length : 90-120cm</p>
+                    <p style="color:#ddd; word-wrap: break-word;">Condition : Well Dried</p>
+                    <p style="color:#ddd; word-wrap: break-word;">Color : Yellowish Greenish</p>
+                    <p style="color:#ddd; word-wrap: break-word;">Packaging Details : Woven Plastic Bags/ gunny plastic</p>
+                    <p></p>
+                </div>
+                <div class="clear"></div>
+                </div>
+			</div>
+		</section>
+		<section id="contact">
+            <div>
+				<h2 style="padding-bottom:10px; margin-top: 0px;color:#AB8742; margin: 15px;">About Me</h2>
+                <div>
+                    <div class="row">
+                        <div class="column">
+                            
+                            <div class="card">
+                                <img id="profil" src="title_image.jpg" alt="Jane" style="border-radius: 50%; margin:15px; height: 350px; width: 350px;">
+                                <div class="container">
+                                <h2>Daniel Heyneker</h2>
+                                <p class="title">CEO & Founder</p>
+                                <p>+6281375092379</p>
+                                <p>danielheynekertmi@gmail.com</p>
+                                    <p><button class="button" onclick="location.href='https://wa.me/6281375092379?text=Hello%20Daniel%2C%20I%20want%20to%20ask%20for%20Quotation'">Contact</button></p>
+                            </div>
+
+                </div>
+                <div class="clear"></div>
+                </div>
+                
+			<div style="color:#AB8742">
+				<div>
+                    <div id="informasi">
+        		        <input style="color:#99eeb5; background-color: #414B3B;"type="button" onclick="location.href='https://wa.me/6281375092379?text=Hello%20Daniel%2C%20I%20want%20to%20ask%20for%20Quotation'" value="Whatsapp Me" id="button1" />
+                    </div>
+                </div>
+            </div>
+		</section>
+	</div>
+</body>
+<script>/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+</html>
